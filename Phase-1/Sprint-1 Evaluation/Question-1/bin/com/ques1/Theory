@@ -1,0 +1,17 @@
+
+==> Why String is immutable?
+
+	String is immutable in java because if it is not immutable then lets say for example
+	we created string and using the same string in multiple classes. if any changes need to made
+	then that string should get updated as well as in all other classes also. Thus it will create 
+	problem thats why string is immutable.
+
+==> Difference between String and String Builder?
+	
+	If we need to use string and at some point the updation of string required to create separate
+	variable and then we are able to use it. Here the amount of declaration of variables is limitation 
+	while we are using strings.
+	
+	if we are assigning using string Builder we just need to declaration only once and use it 
+	to n number of times by simply appending the new string to the old one. 
+	
