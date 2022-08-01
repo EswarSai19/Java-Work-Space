@@ -9,43 +9,53 @@ class Address{
 	String city;
 	String state;
 	String pinCode;
+	 public Address(String city,String state,String pinCode) {
+		this.city = city;
+		this.pinCode = pinCode;
+		this.state = state;
+	 }
+	@Override
+	public String toString() {
+		return "Address [city=" + city + ", state=" + state + ", pinCode=" + pinCode + "]";
+	}
+	
 }
 class Instructor extends Person{
 	int instructorId;
 	int salary;
 	Address address;
+	Address a1 = new Address("Mumbai", "Maharastra","520014");
 	public Instructor(){
 		this.name = "Vijayendra";
 		this.gender = "Male";
-		this.address.city = "Mumbai";
-		this.address.pinCode = "540003";
-		this.address.state = "Maharashtra";
 		this.instructorId = 456;
 		this.salary = 30000;
+		
+		
 	}
 	@Override
 	public String toString() {
-		return "Instructor [studentId=" + instructorId + ", Salary=" + salary + ", address=" + address + "]";
+		return "Instructor [instructorId=" + instructorId + ", salary=" + salary + ", address=" + a1 + "]";
 	}
+	
 }
 class Student extends Person{
 	int studentId;
 	int courseFee;
 	String courseEnrolled;
 	Address address;
+	Address a2 = new Address("Hyderbad", "Telangana","520103");
 	public Student(){
 		this.name = "Bhargavi";
 		this.gender = "Female";
-		this.address.city = "Hyderbad";
-		this.address.pinCode = "520103";
-		this.address.state = "Telangana";
 		this.studentId = 11;
 		this.courseFee = 10000;
 		this.courseEnrolled = "JA111";
+		
 	}
 	@Override
 	public String toString() {
 		return "Student [studentId=" + studentId + ", courseFee=" + courseFee + ", courseEnrolled=" + courseEnrolled
-				+ ", address=" + address + "]";
+				+ ", address=" + a2 + "]";
 	}
 }
