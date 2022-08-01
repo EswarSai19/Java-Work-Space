@@ -1,0 +1,61 @@
+
+	IS-A Relationship :
+	
+	for example i am assuming one animal as a parent and its children would be cat, dog, tiger
+	lion, elephant.
+	here cat IS-A animal & HAS-A little claws
+		 dog IS-A animal & HAS-A medium claws
+		 tiger IS-A animal & HAS-A big claws
+		 lion IS-A animal & HAS-A big claws
+		 elephant IS-A animal & HAS-A no claws
+	All these are having is a relation ship so it is like inheritance and the properties which are
+	present in dog,tiger,lion,elephant,cat contains animal properties.
+	
+	
+	class Animal{
+		String name;
+		String color;
+	}
+	
+	class Dog extends Animal{
+		String claws;
+		String Fur;
+	}
+	
+	class Cat extends Animal{
+		String claws;
+		String Fur;
+	}
+	
+	HAS-A Relationship : 
+		another example is every one on this earth are creatures and humans animals witches and so on
+		are comes under this category.  humans has a different names, address, and so on.
+		
+		class Person{
+		
+		}
+		
+		class Student extends Person{
+			String name;
+			int age;
+			Address  address;
+		}
+		class Address{
+			String street;
+			String city;
+			int pincode;
+		}
+		
+		
+		Access Modifiers  :
+		
+			There are 4 types of Access Modifiers
+			
+			1. Public ----> can be accessible globally like irrespective of packages.
+			2. Private ----> Only accessible within the class.
+			3. Default ----> only accessible within the Package.
+			4. Protected ----> Acts as a default and through inheritance we can access this data in another 
+								package also.
+	
+		 
+		 
