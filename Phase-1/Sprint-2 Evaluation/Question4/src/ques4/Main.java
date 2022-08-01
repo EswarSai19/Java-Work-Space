@@ -1,5 +1,6 @@
 package ques4;
 
+
 public class Main {
 	public static void main(String[] args) {
 		Person newStudent = generatePerson(new Student());
@@ -12,7 +13,13 @@ public class Main {
 	}
 	
 	public static Person generatePerson(Person person) {
-		return person;
+		
+		if(person instanceof Student) {
+			return new Student();
+		}else {
+			return new Instructor();
+		}
+		
 		
 	}
 }
